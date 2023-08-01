@@ -1,0 +1,54 @@
+body{
+    background-color: blanchedalmond;
+}
+.container{
+    border: 2px solid rgb(180, 223, 7);
+    width: 358px;
+    text-align: center;
+    background-color: beige;
+    border-radius:50px/920px;
+   height:500px;
+
+}
+.link-cont:hover > :not(:hover){
+    opacity: 0.2;
+}
+.nav{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(224, 14, 14);
+    transition: all 0.2s;
+    margin: 10px;
+}
+.nav:hover{
+    color: rgb(251, 5, 206);
+    text-decoration: none;
+} 
+h1{
+    font-family: fantasy;
+    color: rgb(3, 86, 97);
+    text-shadow: 2px 2px 10px;
+
+}
+input{
+    height: 50px;
+    border-radius:50px/30px;
+    width: 310px
+    
+}
+#add{
+    width:50px;
+}
+button{
+    color: red;
+    height: 50px;
+    width: 40px;
+   font-size: 20px;
+    border-radius: 90px/30px;
+}
+p{
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+    height: 38px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Cal</title>
+    <style>
+        body{
+            display: grid;
+            place-content: center;
+        }
+        .whole{
+            background-color: khaki;
+            height: 200px;
+            border: 2px solid black;
+            text-align: justify;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        label{
+            margin-left: 7px;
+        }
+        select{
+            margin-left: 70px;
+            width: 100px;
+            
+        }
+        input{
+            margin: 10px;
+            border-radius:50px;
+            height: 25px;
+        }
+        label{
+            color:blueviolet;
+            text-shadow: 2px 3px 5px;
+        }
+        option{
+            border-radius:7px;
+        }
+        .btn{
+            color: rgb(52, 54, 55) ;
+            background-color: skyblue;
+            width: 90px;
+            margin-top: 30px;
+            height: 50px;
+           border-radius:50px ;
+        }
+        .btn:hover{
+            color: skyblue;
+            background-color:rgb(52, 54, 55) ;
+
+        }
+        .result{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+        }
+
+       </style>
+</head>
+<body>
+    <header>
+        <h1>
+           <center>
+
+               Simple Calulator
+           </center> 
+        </h1>
+    </header>
+    <div class="whole">
+        <form action="" class="form" method="post">
+          <label for="num1">Enter Number:</label>  
+          <input id="num1" type="number" name="num1" inputmode="numeric"><br>
+          <label for="num2">Enter Number:</label>
+          <input id="num2"  type="number" name="num2" inputmode="numeric"><br>
+          <label for="Oparators">  Opertaion:</label> 
+          <select name="op" id="Oparators">
+            <option value="Oparations">Oparations</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="^">^</option>
+           </select><br>
+    </form>
+        <center>
+            <button class="btn" onclick="calculater()" >calculate</button>
+        </center>
+    </div>
+    <h5 id="result" class="result">The result is:  </h5>
+    <script src="Calculater.js">
+        
+    </script>
+</body>
+</html>
